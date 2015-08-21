@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 emmax workflow
 ==============
 为了简化本实验gwas工作而写的一个小的shell脚本，仅仅是将PLINK和EMMAX这两款优秀的软件结合起来使用。
@@ -18,3 +19,6 @@ $ ./emmax.sh -i example -o out
 如需要对执行脚本和程序添加可执行权限：
 $chmod +x <filename>
 如有使用问题，可联系 yyzhang@cau.edu.cn。
+=======
+# emmax_workflow
+>>>>>>> d49edee261f82f8664015cb1b26f8b0525813fa8

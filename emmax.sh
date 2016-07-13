@@ -18,8 +18,8 @@ done
 
 path=`pwd`
 mkdir $input
-$path/bin/plink --bfile $input --sheep --recode 12 transpose --output-missing-genotype 0 --out $path/$input/$input
-$path/bin/plink --bfile $input -sheep --pca --out $path/$input/$input
+$path/bin/plink --bfile $input --chr-set 32 --allow-extra-chr --recode 12 transpose --output-missing-genotype 0 --out $path/$input/$input
+$path/bin/plink --bfile $input --chr-set 32 --allow-extra-chr --pca --out $path/$input/$input
 # generate tped/tfam and eigenvec
 #make phenotype file
 awk '{print $1,$2,$6}' $path/$input/$input.tfam > $path/$input/$input.pheno
